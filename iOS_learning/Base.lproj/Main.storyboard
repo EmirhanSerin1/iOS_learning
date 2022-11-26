@@ -16,21 +16,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-Mo-H0t">
-                                <rect key="frame" x="186" y="182" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lli-Mo-H0t">
+                                <rect key="frame" x="186" y="182" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="uxA-wd-fu1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5At-2h-GcQ">
+                                <rect key="frame" x="186" y="697" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diamond" highlightedImage="diamond" translatesAutoresizingMaskIntoConstraints="NO" id="N6c-qX-9iL">
                                 <rect key="frame" x="72" y="313" width="270" height="270"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjO-5O-oUO">
+                                <rect key="frame" x="99" y="621" width="148" height="13"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5At-2h-GcQ" firstAttribute="top" secondItem="N6c-qX-9iL" secondAttribute="bottom" constant="114" id="22Y-TL-7JH"/>
+                            <constraint firstItem="N6c-qX-9iL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="2G1-YH-CR1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N6c-qX-9iL" secondAttribute="trailing" constant="72" id="4Rs-jO-2cC"/>
+                            <constraint firstItem="Lli-Mo-H0t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="7Bm-Ox-TqN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DjO-5O-oUO" secondAttribute="trailing" constant="248" id="7Di-N2-ZVK"/>
+                            <constraint firstItem="5At-2h-GcQ" firstAttribute="top" secondItem="Lli-Mo-H0t" secondAttribute="bottom" constant="494.5" id="HaU-ze-4cU"/>
+                            <constraint firstItem="N6c-qX-9iL" firstAttribute="top" secondItem="Lli-Mo-H0t" secondAttribute="bottom" constant="110.5" id="IAH-jw-NP4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5At-2h-GcQ" secondAttribute="trailing" constant="186" id="NQE-9A-eVC"/>
+                            <constraint firstItem="5At-2h-GcQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="PSE-I1-bQc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lli-Mo-H0t" secondAttribute="trailing" constant="186" id="XTa-8I-ejD"/>
+                            <constraint firstItem="DjO-5O-oUO" firstAttribute="top" secondItem="N6c-qX-9iL" secondAttribute="bottom" constant="38" id="bLI-Ma-OV7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5At-2h-GcQ" secondAttribute="bottom" constant="144" id="fwg-nr-1Kr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DjO-5O-oUO" secondAttribute="bottom" constant="228" id="idn-cL-2At"/>
+                            <constraint firstItem="Lli-Mo-H0t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="186" id="voM-KT-OMX"/>
+                            <constraint firstItem="DjO-5O-oUO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="yFD-O5-hwj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="Buttonmk" destination="DjO-5O-oUO" id="VDd-JX-U4i"/>
+                        <outlet property="imageDiamondView" destination="N6c-qX-9iL" id="M7Z-Ua-OOd"/>
+                        <outlet property="labelBottom" destination="5At-2h-GcQ" id="v3y-Za-2IE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
